@@ -33,7 +33,7 @@ public class ProductController {
     }
     @PostMapping("Delete")
     public String Delete(Integer id){
-        
-        Boolean isSuccessful = _productService.delete(id);
+    
+        return "Successful";
     }
 }

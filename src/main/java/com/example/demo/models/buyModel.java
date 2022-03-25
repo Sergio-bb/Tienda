@@ -7,10 +7,13 @@ import java.util.Date;
 
 @Entity
 @Table(name= "buy")
-public class buyModel{
+public class BuyModel{
     @Id
     @Column(nullable = false, unique = true)
     private int id;
+    private Date Date;
+    private ArrayList<ProductModel> products;
+    private Double price;
 
     public int getId() {
         return id;
@@ -38,8 +41,4 @@ public class buyModel{
     public void setPrice(Double price) {
         this.price = price;
     }
-    private Date Date;
-    private ArrayList<ProductModel> products;
-    private Double price;
-
 }

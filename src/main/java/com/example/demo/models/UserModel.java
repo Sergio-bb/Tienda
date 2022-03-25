@@ -10,6 +10,8 @@ public class UserModel {
     @Column(nullable = false, unique = true)
     private int id;
     private String name;
+    private String lastName;
+    private String password;
     public int getId() {
         return id;
     }
@@ -33,8 +35,5 @@ public class UserModel {
     }
     public void setPassword(String password) {
         this.password = password;
-    }
-    private String lastName;
-    private String password;
-    
+    } 
 }
