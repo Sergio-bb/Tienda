@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class UserModel {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true)
     private int id;
     private String name;

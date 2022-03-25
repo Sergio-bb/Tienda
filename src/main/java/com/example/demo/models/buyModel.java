@@ -9,6 +9,7 @@ import java.util.Date;
 @Table(name= "buy")
 public class BuyModel{
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true)
     private int id;
     private Date Date;

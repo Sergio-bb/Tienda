@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Table(name= "sale")
 public class SaleModel {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true )
     private int id;
     private ArrayList<ProductModel> products;

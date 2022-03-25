@@ -8,7 +8,6 @@ import com.example.demo.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
 public class UserService {
@@ -24,7 +23,7 @@ public class UserService {
         return (ArrayList<UserModel>) _userRepository.findAll();
     }
 
-    public UserModel add(@RequestBody UserModel user) {
+    public UserModel add(UserModel user) {
         return _userRepository.save(user);
     }
 
